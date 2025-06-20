@@ -1,46 +1,65 @@
+# 📊 TFM – Análisis Organizativo en el Fútbol Femenino
 
-# TFM – Análisis de Fútbol Femenino
+Esta aplicación forma parte del Trabajo de Fin de Máster del programa de Python & Big Data en Sports Data Campus. Analiza el rendimiento organizativo de más de 3 000 jugadoras en ligas femeninas europeas.
 
-> **Autor:** Roberto Ricobaldi  
-> **Escuela:** Sports Data Campus – Máster Python aplicado al Fútbol
+---
 
-## Objetivo
-Construir una aplicación *Streamlit* capaz de:
-1. Control de acceso (login)
-2. Visualizar **Home** y **Stats** con filtros interactivos
-3. Calcular proyección de jugadoras Sub‑20 mediante **Machine Learning**
-4. Exportar rankings a PDF con `fpdf`
+## 🔗 Accesos
 
-## Estructura de carpetas
+- 🌐 **Aplicación online**: [Abrir Dashboard](https://upttakhrqhhymcvvlw9wzw.streamlit.app/)
+- 📂 **Repositorio GitHub**: [Ver código](https://github.com/RobertoRicobaldi/TFM)
 
-```
-Modulo 11/
-├── TFM.py                 # Front‑End (Streamlit)
-├── backend_utils.py       # Funciones de back‑end
-├── acquisition.ipynb      # Notebook de adquisición de datos
-├── eda.ipynb              # Notebook EDA + métricas
-├── flags/                 # Banderas PNG
-├── data_clean.xlsx        # Versión limpia del dataset
-└── data_with_score.xlsx   # Dataset con Puntuación global
-```
+---
 
-## Requisitos
+## 🎯 Objetivo
 
-```
-pip install streamlit pandas scikit-learn plotly fpdf seaborn matplotlib nbformat
-```
+Desarrollar una app profesional de análisis deportivo que integre:
+- Evaluación de métricas organizativas por jugadora
+- Predicción de talento Sub20 mediante Machine Learning
+- Exportación personalizada en PDF
+- Visualización avanzada con filtros y gráficos interactivos
 
-## Ejecución
+---
 
-```bash
-streamlit run TFM.py
-```
+## 🧱 Estructura del Proyecto
 
-Usuario / contraseña de prueba: **login / login**
+TFM/
+│
+├── TFM_online.py ← App principal con interfaz Streamlit
+├── backend_utils.py ← Funciones reutilizables y lógica de negocio
+├── Fase_Organizativa.xlsx ← Dataset principal con +3000 jugadoras
+├── flags/ ← Carpeta de banderas por país
+│
+├── acquisition.ipynb ← Notebook de carga y validación de datos
+├── eda.ipynb ← Análisis exploratorio y generación de métricas
+├── requirements.txt ← Requisitos para reproducibilidad
+└── README.md ← Este archivo
 
-## Datos
+yaml
+Copiar
+Editar
 
-Archivo Excel original:  
-`Fase Organizativa Principales Ligas Europeas.xlsx`  
-(Se puede reemplazar por cualquier otra fuente CSV/API indicándolo en `acquisition.ipynb`)
+---
+
+🧠 Funcionalidades
+🔐 Login personalizado
+
+🏠 Página de inicio explicativa
+
+📊 Filtros por país, edad y posición
+
+⚙️ Cálculo de puntuación organizativa ponderada
+
+📈 Radar de comparación de jugadoras
+
+🔮 Ranking Sub20 con predicción ML (Random Forest)
+
+📤 Exportación de Top10 y Sub20 a PDF
+
+🌍 Visualización con banderas y métricas destacadas
+
+📚 Fuentes
+Elaboración propia con datos extraídos de plataformas deportivas públicas
+
+Estructura y visualización desarrolladas en Python con Streamlit, Pandas, Plotly, FPDF y Scikit-learn
 
