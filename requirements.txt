@@ -4,3 +4,6 @@ pandas>=2.2.2
 openpyxl>=3.1.2
 pyyaml>=6.0
 bcrypt>=4.1.2
+scikit-learn>=1.4.2
+fpdf>=1.7.2
+plotly>=5.20.0
